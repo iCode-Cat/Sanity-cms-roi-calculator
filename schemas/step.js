@@ -10,10 +10,10 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: 'question',
+      name: 'fields',
       title: 'Questions',
       type: 'array',
-      of: [{ type: 'question' }],
+      of: [{ type: 'reference', to: [{ type: 'question' }] }],
       validation: (Rule) => Rule.required(),
     },
     {
@@ -23,4 +23,9 @@ export default {
       validation: (Rule) => Rule.required(),
     },
   ],
+  preview: {
+    select: {
+      title: 'index',
+    },
+  },
 };

@@ -62,6 +62,11 @@ export default {
       title: 'Steps',
       type: 'array',
       of: [{ type: 'step' }],
+    },
+    {
+      name: 'stats',
+      title: 'Breakdown Settings',
+      type: 'stat',
       validation: (Rule) => Rule.required(),
     },
   ],

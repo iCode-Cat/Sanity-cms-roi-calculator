@@ -52,12 +52,28 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: 'onlyText',
+      name: 'validation',
+      title: 'Validation',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Email', value: 'email' },
+          { title: 'Text', value: 'text' },
+        ],
+      },
+      validation: (Rule) => Rule.required(),
+      hidden: ({ document }) => document?.questionType !== 'text',
+    },
+    {
+      name: 'options',
       title: 'Choose options for this question type',
       type: 'array',
       of: [{ type: 'option' }],
       validation: (Rule) => Rule.required(),
-      hidden: ({ document }) => document?.questionType !== 'boolean',
+      hidden: ({ document }) =>
+        document?.questionType !== 'boolean' &&
+        document?.questionType !== 'booleanMulti' &&
+        document?.questionType !== 'dropdown',
     },
   ],
 };
