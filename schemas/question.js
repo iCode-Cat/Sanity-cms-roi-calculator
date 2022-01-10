@@ -76,4 +76,9 @@ export default {
         document?.questionType !== 'dropdown',
     },
   ],
+  preview: {
+    select: {
+      title: 'text',
+    },
+  },
 };

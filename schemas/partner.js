@@ -1,6 +1,6 @@
 export default {
   name: 'partner',
-  title: 'Partner',
+  title: 'Partners',
   type: 'document',
   fields: [
     {
@@ -68,6 +68,29 @@ export default {
       title: 'Breakdown Settings',
       type: 'stat',
       validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'informationPractices',
+      title: 'Information Practices',
+      type: 'informationPractice',
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'lastSection',
+      title: 'Last Section',
+      type: 'object',
+      fields: [
+        {
+          name: 'buttonText',
+          title: 'Button Text',
+          type: 'string',
+        },
+        {
+          name: 'href',
+          title: 'Href',
+          type: 'string',
+        },
+      ],
     },
   ],
   preview: {

@@ -1,11 +1,12 @@
 export default {
   name: 'stat',
   title: 'Stats Breakdown',
-  type: 'document',
+  type: 'object',
   initialValue: {
     tabMenuMod: 1,
     currency: '$',
     disclaimer: false,
+    sectionGrade: true,
   },
   fields: [
     {
@@ -24,6 +25,17 @@ export default {
       name: 'disclaimer',
       title: 'Disclaimer',
       type: 'boolean',
+    },
+    {
+      name: 'sectionGrade',
+      title: 'Section Grade',
+      type: 'boolean',
+    },
+    {
+      name: 'tabMenus',
+      title: 'Tab Menus',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'tabMenuBreakdown' }] }],
     },
   ],
 };

@@ -10,6 +10,8 @@ import step from './step';
 import question from './question';
 import option from './option';
 import stat from './stat';
+import tabMenu from './tabMenu';
+import informationPractice from './informationPractice';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -29,5 +31,7 @@ export default createSchema({
     question,
     option,
     stat,
+    tabMenu,
+    informationPractice,
   ]),
 });
