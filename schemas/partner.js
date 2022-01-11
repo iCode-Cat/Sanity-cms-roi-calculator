@@ -16,11 +16,29 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: 'singleFlow',
+      name: 'singleFLow',
       title: 'Single flow?',
       type: 'boolean',
       description: 'When it is true, questions will be asked in the same flow.',
-      initialValue: false,
+    },
+    {
+      name: 'nextButton',
+      title: 'Next Button Text',
+      type: 'string',
+      description: 'Next button text for questions',
+    },
+    {
+      name: 'ctaButton',
+      title: 'Calculate Button Text',
+      type: 'string',
+      description: 'Calculate button text for questions',
+    },
+    {
+      name: 'singleFlowTitle',
+      title: 'Single Flow Title',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+      hidden: ({ document }) => document?.singleFlow === false,
     },
     {
       name: 'numberOfSteps',
@@ -61,6 +79,7 @@ export default {
       name: 'steps',
       title: 'Steps',
       type: 'array',
+      description: 'Note: Single flow only reads question of 1.step',
       of: [{ type: 'step' }],
     },
     {
@@ -74,6 +93,11 @@ export default {
       title: 'Information Practices',
       type: 'informationPractice',
       validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'recommendation',
+      title: 'Recommendation',
+      type: 'recommendation',
     },
     {
       name: 'lastSection',

@@ -1,6 +1,6 @@
 export default {
-  name: 'question',
-  title: 'Questions',
+  name: 'relatedQuestion',
+  title: 'Related Questions',
   type: 'document',
   fields: [
     {
@@ -15,12 +15,16 @@ export default {
       type: 'string',
       validation: (Rule) => Rule.required(),
     },
-
+    {
+      name: 'questionId',
+      title: 'Question id',
+      type: 'number',
+      validation: (Rule) => Rule.required(),
+    },
     {
       name: 'placeholder',
       title: 'Placeholder',
       type: 'string',
-      validation: (Rule) => Rule.required(),
     },
     {
       name: 'stateName',
@@ -68,6 +72,12 @@ export default {
       title: 'Call Question',
       type: 'boolean',
       hidden: ({ document }) => document?.questionType !== 'boolean',
+    },
+    {
+      name: 'relatedQuestion',
+      title: 'Is Related Question to another?',
+      type: 'boolean',
+      //   hidden: ({ document }) => document?.questionType !== 'boolean',
     },
     {
       name: 'options',

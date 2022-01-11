@@ -1,7 +1,7 @@
 export default {
   name: 'step',
   title: 'Steps',
-  type: 'document',
+  type: 'object',
   fields: [
     {
       name: 'index',
@@ -17,10 +17,10 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: 'button',
-      title: 'Button text',
-      type: 'string',
-      validation: (Rule) => Rule.required(),
+      name: 'relatedQuestions',
+      title: 'Related Questions',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'relatedQuestion' }] }],
     },
   ],
   preview: {

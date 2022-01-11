@@ -17,5 +17,10 @@ export default {
       initialValue: 'No',
       description: 'Icon shortland from google material icons',
     },
+    {
+      name: 'callQuestion',
+      title: 'Call Question Number',
+      type: 'number',
+    },
   ],
 };
