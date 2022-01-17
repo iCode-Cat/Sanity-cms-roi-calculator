@@ -16,6 +16,9 @@ import sectionList from './sectionList';
 import sectionGrade from './sectionGrade';
 import recommendation from './recommendation';
 import relatedQuestion from './relatedQuestion';
+import recommendationCard from './recommendationCard';
+import worryAbout from './worryAbout';
+import shouldDo from './shouldDo';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -40,6 +43,9 @@ export default createSchema({
     sectionList,
     sectionGrade,
     recommendation,
+    recommendationCard,
     relatedQuestion,
+    worryAbout,
+    shouldDo,
   ]),
 });

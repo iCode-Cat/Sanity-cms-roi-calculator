@@ -21,6 +21,31 @@ export default {
       name: 'callQuestion',
       title: 'Call Question Number',
       type: 'number',
+      initialValue: 0,
+    },
+    {
+      name: 'followUp',
+      title: 'Follow up question?',
+      type: 'boolean',
+      initialValue: false,
+    },
+    {
+      name: 'callRecommendation',
+      title: 'Call recommendations on answer',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'recommendationCard' }] }],
+    },
+    {
+      name: 'callShouldDo',
+      title: 'Call "What should do" on answer',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'shouldDo' }] }],
+    },
+    {
+      name: 'callWorryAbout',
+      title: 'Call "Worry about" on answer',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'worryAbout' }] }],
     },
   ],
 };

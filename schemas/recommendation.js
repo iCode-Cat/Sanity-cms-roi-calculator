@@ -1,7 +1,7 @@
 export default {
   name: 'recommendation',
   title: 'Recommendation',
-  type: 'document',
+  type: 'object',
   fields: [
     {
       name: 'showButton',
