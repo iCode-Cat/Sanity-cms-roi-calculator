@@ -1,16 +1,21 @@
 export default {
-  name: 'worryAbout',
-  title: 'Worry About Cards',
+  name: 'riskAssesmentLabel',
+  title: 'Risk Assestment Labels',
   type: 'document',
   fields: [
     {
-      name: 'title',
-      title: 'Title',
+      title: 'Color',
+      name: 'color',
       type: 'string',
     },
     {
-      name: 'content',
+      title: 'Title',
+      name: 'title',
+      type: 'string',
+    },
+    {
       title: 'Content',
+      name: 'content',
       type: 'string',
     },
     {

@@ -30,6 +30,19 @@ export default {
       initialValue: false,
     },
     {
+      name: 'followupInformation',
+      title: 'It has follow up information?',
+      type: 'boolean',
+      initialValue: false,
+    },
+    {
+      name: 'information',
+      title: 'Choose follow up information',
+      type: 'reference',
+      to: [{ type: 'information' }],
+      // hidden: ({ document }) => !document?.followupInformation,
+    },
+    {
       name: 'callRecommendation',
       title: 'Call recommendations on answer',
       type: 'array',

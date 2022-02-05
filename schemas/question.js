@@ -79,6 +79,11 @@ export default {
         document?.questionType !== 'booleanMulti' &&
         document?.questionType !== 'dropdown',
     },
+    {
+      name: 'skip',
+      title: 'Can user skip this question?',
+      type: 'boolean',
+    },
   ],
   preview: {
     select: {

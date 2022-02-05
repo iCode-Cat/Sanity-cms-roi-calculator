@@ -15,6 +15,11 @@ export default {
       type: 'string',
     },
     {
+      name: 'subtitle',
+      title: 'Subtitle',
+      type: 'string',
+    },
+    {
       name: 'active',
       title: 'Active',
       type: 'boolean',
@@ -37,6 +42,11 @@ export default {
         {
           name: 'title',
           title: 'Title',
+          type: 'string',
+        },
+        {
+          name: 'subtitle',
+          title: 'Subtitle',
           type: 'string',
         },
         {
@@ -86,6 +96,11 @@ export default {
         {
           name: 'title',
           title: 'Title',
+          type: 'string',
+        },
+        {
+          name: 'subtitle',
+          title: 'Subtitle',
           type: 'string',
         },
         {

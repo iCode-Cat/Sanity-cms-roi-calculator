@@ -29,6 +29,12 @@ export default {
       description: "URL of the partner logo's.",
       validation: (Rule) => Rule.required(),
     },
+    {
+      name: 'fields',
+      title: 'Hero Question',
+      type: 'reference',
+      to: [{ type: 'question' }],
+    },
   ],
   preview: {
     select: {

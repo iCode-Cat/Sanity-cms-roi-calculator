@@ -22,6 +22,11 @@ export default {
       description: 'Currency symbol of breakdown',
     },
     {
+      name: 'subtitle',
+      title: 'Subtitle',
+      type: 'string',
+    },
+    {
       name: 'disclaimer',
       title: 'Disclaimer',
       type: 'boolean',

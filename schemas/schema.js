@@ -19,6 +19,13 @@ import relatedQuestion from './relatedQuestion';
 import recommendationCard from './recommendationCard';
 import worryAbout from './worryAbout';
 import shouldDo from './shouldDo';
+import sectionGradeRec from './sectionGradeRec';
+import sectionGradeShouldDo from './sectionGradeShouldDo';
+import sectionGradeBreakDown from './sectionGradeBreakDown';
+import riskAssesment from './riskAssesment';
+import riskAssesmentLabel from './riskAssesmentLabel';
+import tag from './tag';
+import information from './information';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -41,11 +48,18 @@ export default createSchema({
     tabMenu,
     informationPractice,
     sectionList,
-    sectionGrade,
     recommendation,
     recommendationCard,
     relatedQuestion,
     worryAbout,
     shouldDo,
+    sectionGrade,
+    sectionGradeRec,
+    sectionGradeShouldDo,
+    sectionGradeBreakDown,
+    riskAssesment,
+    riskAssesmentLabel,
+    tag,
+    information,
   ]),
 });

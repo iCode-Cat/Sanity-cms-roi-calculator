@@ -14,6 +14,21 @@ export default {
       type: 'boolean',
     },
     {
+      name: 'title',
+      title: 'title',
+      type: 'string',
+    },
+    {
+      name: 'barLeft',
+      title: 'Saving Bar Left',
+      type: 'string',
+    },
+    {
+      name: 'barRight',
+      title: 'Saving Bar Right',
+      type: 'string',
+    },
+    {
       name: 'tabs',
       title: 'Tabs',
       type: 'array',
@@ -28,6 +43,7 @@ export default {
               title: 'Tabname',
               type: 'string',
             },
+
             {
               name: 'active',
               title: 'is Active?',

@@ -100,6 +100,11 @@ export default {
       type: 'recommendation',
     },
     {
+      name: 'riskAssesment',
+      title: 'Risk Assesment',
+      type: 'riskAssesment',
+    },
+    {
       name: 'lastSection',
       title: 'Last Section',
       type: 'object',

@@ -1,6 +1,6 @@
 export default {
-  name: 'sectionGradeWorryAbout',
-  title: 'Section Grade Worry About ',
+  name: 'sectionGradeRecommendation',
+  title: 'Section Grade Recommendation',
   type: 'document',
   fields: [
     {
