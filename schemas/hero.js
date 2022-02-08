@@ -16,6 +16,12 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: 'initialQuestion',
+      title: 'Initial Question?',
+      type: 'boolean',
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: 'button_text',
       title: 'Button text',
       type: 'string',

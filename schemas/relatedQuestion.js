@@ -51,6 +51,7 @@ export default {
           { title: 'Boolean', value: 'boolean' },
           { title: 'Multi Boolean', value: 'booleanMulti' },
           { title: 'Dropdown', value: 'dropdown' },
+          { title: 'Context', value: 'context' },
         ],
       },
       validation: (Rule) => Rule.required(),
@@ -88,6 +89,11 @@ export default {
         document?.questionType !== 'boolean' &&
         document?.questionType !== 'booleanMulti' &&
         document?.questionType !== 'dropdown',
+    },
+    {
+      name: 'information',
+      title: 'Information',
+      type: 'text',
     },
   ],
   preview: {
