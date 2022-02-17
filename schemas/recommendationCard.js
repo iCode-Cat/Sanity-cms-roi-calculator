@@ -1,7 +1,7 @@
 export default {
   name: 'recommendationCard',
   title: 'Recommendation Cards',
-  type: 'document',
+  type: 'object',
   fields: [
     {
       name: 'readTime',

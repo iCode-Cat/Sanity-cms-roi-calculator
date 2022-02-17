@@ -1,7 +1,7 @@
 export default {
   name: 'option',
   title: 'Options',
-  type: 'document',
+  type: 'object',
   fields: [
     {
       name: 'text',
@@ -40,25 +40,32 @@ export default {
       title: 'Choose follow up information',
       type: 'reference',
       to: [{ type: 'information' }],
+      hidden: (document) => document.followupInformation === false,
       // hidden: ({ document }) => !document?.followupInformation,
     },
     {
-      name: 'callRecommendation',
-      title: 'Call recommendations on answer',
+      name: 'conditionList',
+      title: 'Condinited Tags',
       type: 'array',
-      of: [{ type: 'reference', to: [{ type: 'recommendationCard' }] }],
+      of: [{ type: 'reference', to: { type: 'conditionedTags' } }],
     },
-    {
-      name: 'callShouldDo',
-      title: 'Call "What should do" on answer',
-      type: 'array',
-      of: [{ type: 'reference', to: [{ type: 'shouldDo' }] }],
-    },
-    {
-      name: 'callWorryAbout',
-      title: 'Call "Worry about" on answer',
-      type: 'array',
-      of: [{ type: 'reference', to: [{ type: 'worryAbout' }] }],
-    },
+    // {
+    //   name: 'callRecommendation',
+    //   title: 'Call recommendations on answer',
+    //   type: 'array',
+    //   of: [{ type: 'reference', to: [{ type: 'recommendationCard' }] }],
+    // },
+    // {
+    //   name: 'callShouldDo',
+    //   title: 'Call "What should do" on answer',
+    //   type: 'array',
+    //   of: [{ type: 'reference', to: [{ type: 'shouldDo' }] }],
+    // },
+    // {
+    //   name: 'callWorryAbout',
+    //   title: 'Call "Worry about" on answer',
+    //   type: 'array',
+    //   of: [{ type: 'reference', to: [{ type: 'worryAbout' }] }],
+    // },
   ],
 };

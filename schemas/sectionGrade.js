@@ -1,7 +1,7 @@
 export default {
   name: 'sectionGradeWorryAbout',
   title: 'Section Grade Worry About ',
-  type: 'document',
+  type: 'object',
   fields: [
     {
       name: 'title',

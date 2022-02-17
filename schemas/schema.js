@@ -26,6 +26,12 @@ import riskAssesment from './riskAssesment';
 import riskAssesmentLabel from './riskAssesmentLabel';
 import tag from './tag';
 import information from './information';
+import BarCard from './BarCard';
+import submit from './submit';
+import input from './input';
+import card from './card';
+import conditionedTagsMissing from './conditionedTagsMissing';
+import conditionedTagsExists from './conditionedTagsExists';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -59,7 +65,12 @@ export default createSchema({
     sectionGradeBreakDown,
     riskAssesment,
     riskAssesmentLabel,
+    submit,
     tag,
     information,
+    input,
+    card,
+    // conditionedTagsMissing,
+    conditionedTagsExists,
   ]),
 });

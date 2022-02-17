@@ -1,7 +1,7 @@
 export default {
   name: 'sectionGradeRecommendation',
   title: 'Section Grade Recommendation',
-  type: 'document',
+  type: 'object',
   fields: [
     {
       name: 'title',

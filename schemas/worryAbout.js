@@ -1,7 +1,7 @@
 export default {
   name: 'worryAbout',
   title: 'Worry About Cards',
-  type: 'document',
+  type: 'object',
   fields: [
     {
       name: 'title',

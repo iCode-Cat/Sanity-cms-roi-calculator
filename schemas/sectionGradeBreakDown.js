@@ -1,7 +1,7 @@
 export default {
   name: 'sectionGradeBreakDown',
   title: 'Section Grade Breakdown',
-  type: 'document',
+  type: 'object',
   fields: [
     {
       name: 'title',

@@ -1,7 +1,7 @@
 export default {
   name: 'shouldDo',
   title: 'What You Should Do Cards',
-  type: 'document',
+  type: 'object',
   fields: [
     {
       name: 'title',

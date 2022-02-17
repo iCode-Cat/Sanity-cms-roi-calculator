@@ -1,6 +1,6 @@
 export default {
   name: 'partner',
-  title: 'Partners',
+  title: 'Pages',
   type: 'document',
   fields: [
     {
@@ -16,6 +16,12 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: 'uuid',
+      title: 'uuid',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: 'singleFLow',
       title: 'Single flow?',
       type: 'boolean',
@@ -26,6 +32,16 @@ export default {
       title: 'Next Button Text',
       type: 'string',
       description: 'Next button text for questions',
+    },
+    {
+      name: 'skipButton',
+      title: 'Skip Button Text',
+      type: 'string',
+    },
+    {
+      name: 'skipAllButton',
+      title: 'Skip All Button Text',
+      type: 'string',
     },
     {
       name: 'ctaButton',
@@ -105,22 +121,28 @@ export default {
       type: 'riskAssesment',
     },
     {
-      name: 'lastSection',
-      title: 'Last Section',
-      type: 'object',
-      fields: [
-        {
-          name: 'buttonText',
-          title: 'Button Text',
-          type: 'string',
-        },
-        {
-          name: 'href',
-          title: 'Href',
-          type: 'string',
-        },
-      ],
+      name: 'connection',
+      title: 'info & submit',
+      type: 'array',
+      of: [{ type: 'reference', to: { type: 'submitSection' } }],
     },
+    // {
+    //   name: 'lastSection',
+    //   title: 'Last Section',
+    //   type: 'object',
+    //   fields: [
+    //     {
+    //       name: 'buttonText',
+    //       title: 'Button Text',
+    //       type: 'string',
+    //     },
+    //     {
+    //       name: 'href',
+    //       title: 'Href',
+    //       type: 'string',
+    //     },
+    //   ],
+    // },
   ],
   preview: {
     select: {

@@ -1,7 +1,7 @@
 export default {
   name: 'tag',
   title: 'Tags',
-  type: 'document',
+  type: 'object',
   fields: [
     {
       name: 'name',
