@@ -3,20 +3,20 @@ export default {
   title: 'Cards',
   type: 'document',
   fields: [
-    {
-      name: 'cardId',
-      title: 'Card Id',
-      type: 'number',
-    },
+    // {
+    //   name: 'cardId',
+    //   title: 'Card Id',
+    //   type: 'number',
+    // },
     {
       name: 'section',
       title: 'Section',
       type: 'string',
       options: {
         list: [
-          { title: 'Best Practice (a)', value: 'bestpracticeA' },
+          { title: 'What You Should Worry?', value: 'worryAbout' },
           { title: 'Recommendations', value: 'recommendations' },
-          { title: 'Why Coggni?', value: 'whyCoggni' },
+          { title: 'Why Cognni?', value: 'whyCognni' },
         ],
       },
     },
@@ -71,6 +71,24 @@ export default {
           { title: '9', value: 9 },
         ],
       },
+    },
+    {
+      name: 'navigate',
+      title: 'Has details?',
+      type: 'boolean',
+      initialValue: false,
+    },
+    {
+      name: 'linkTitle',
+      title: 'Navigator title',
+      type: 'string',
+      hidden: ({ document }) => document.navigate === false,
+    },
+    {
+      name: 'inlineCard',
+      title: 'Card Details When Navigate in',
+      type: 'inlineCard',
+      hidden: ({ document }) => document.navigate === false,
     },
     {
       name: 'conditionedTagsExists',

@@ -32,6 +32,7 @@ import input from './input';
 import card from './card';
 import conditionedTagsMissing from './conditionedTagsMissing';
 import conditionedTagsExists from './conditionedTagsExists';
+import inlineCard from './inlineCard';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -70,6 +71,7 @@ export default createSchema({
     information,
     input,
     card,
+    inlineCard,
     // conditionedTagsMissing,
     conditionedTagsExists,
   ]),
