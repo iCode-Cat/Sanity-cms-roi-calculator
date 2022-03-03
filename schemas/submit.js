@@ -106,6 +106,16 @@ export default {
       hidden: ({ document }) => document?.type !== 'form',
     },
     {
+      name: 'showCtaPopup',
+      title: 'Show Popup on CTA?',
+      type: 'boolean',
+    },
+    {
+      name: 'submissionOnCta',
+      title: 'Show Submission Page on CTA?',
+      type: 'boolean',
+    },
+    {
       name: 'inputs',
       title: 'Choose inputs for form',
       type: 'array',

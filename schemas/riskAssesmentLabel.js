@@ -53,5 +53,21 @@ export default {
       title: 'In Card Logo',
       type: 'string',
     },
+    {
+      name: 'tagFound',
+      title: 'Conditioned Tags',
+      type: 'array',
+      of: [{ type: 'reference', to: { type: 'conditionedTags' } }],
+    },
+    {
+      name: 'change',
+      title: 'Change',
+      type: 'number',
+    },
+    {
+      name: 'defaultValue',
+      title: 'Default Value',
+      type: 'number',
+    },
   ],
 };

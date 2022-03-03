@@ -26,13 +26,16 @@ import riskAssesment from './riskAssesment';
 import riskAssesmentLabel from './riskAssesmentLabel';
 import tag from './tag';
 import information from './information';
-import BarCard from './BarCard';
+import BarCard from './submission';
 import submit from './submit';
 import input from './input';
 import card from './card';
 import conditionedTagsMissing from './conditionedTagsMissing';
 import conditionedTagsExists from './conditionedTagsExists';
 import inlineCard from './inlineCard';
+import inCard from './inCard';
+import submission from './submission';
+import recommendationPopup from './recommendationPopup';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -72,7 +75,10 @@ export default createSchema({
     input,
     card,
     inlineCard,
+    inCard,
     // conditionedTagsMissing,
     conditionedTagsExists,
+    submission,
+    recommendationPopup,
   ]),
 });

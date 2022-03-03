@@ -1,7 +1,7 @@
 export default {
   name: 'riskAssesment',
   title: 'Risk Assesment',
-  type: 'document',
+  type: 'object',
   fields: [
     {
       name: 'active',

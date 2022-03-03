@@ -1,7 +1,7 @@
 export default {
   name: 'list',
   title: 'Lists',
-  type: 'document',
+  type: 'object',
   fields: [
     {
       name: 'title',

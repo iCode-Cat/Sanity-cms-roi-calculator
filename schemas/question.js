@@ -24,7 +24,7 @@ export default {
     },
     {
       name: 'stateName',
-      title: 'State Name',
+      title: 'Question Id',
       type: 'string',
       validation: (Rule) => [
         Rule.required(),
@@ -47,7 +47,7 @@ export default {
           { title: 'Boolean', value: 'boolean' },
           { title: 'Multi Boolean', value: 'booleanMulti' },
           { title: 'Dropdown', value: 'dropdown' },
-          { title: 'Context', value: 'context' },
+          { title: 'Information', value: 'context' },
         ],
       },
       validation: (Rule) => Rule.required(),
@@ -84,6 +84,37 @@ export default {
       name: 'skip',
       title: 'Can user skip this question?',
       type: 'boolean',
+    },
+    {
+      name: 'numericCondition',
+      title: 'Add Condition by amount',
+      type: 'array',
+      hidden: ({ document }) => document.questionType !== 'numeric',
+      of: [
+        {
+          type: 'document',
+          name: 'question',
+          title: 'Questions',
+          fields: [
+            {
+              name: 'minAmount',
+              title: 'Min amount',
+              type: 'number',
+            },
+            {
+              name: 'maxAmount',
+              title: 'Max amount',
+              type: 'number',
+            },
+            {
+              name: 'conditionedTag',
+              title: 'Select tags',
+              type: 'array',
+              of: [{ type: 'reference', to: { type: 'conditionedTags' } }],
+            },
+          ],
+        },
+      ],
     },
   ],
   preview: {

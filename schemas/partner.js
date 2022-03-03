@@ -21,12 +21,12 @@ export default {
       type: 'string',
       validation: (Rule) => Rule.required(),
     },
-    {
-      name: 'singleFLow',
-      title: 'Single flow?',
-      type: 'boolean',
-      description: 'When it is true, questions will be asked in the same flow.',
-    },
+    // {
+    //   name: 'singleFLow',
+    //   title: 'Single flow?',
+    //   type: 'boolean',
+    //   description: 'When it is true, questions will be asked in the same flow.',
+    // },
     {
       name: 'nextButton',
       title: 'Next Button Text',
@@ -49,23 +49,23 @@ export default {
       type: 'string',
       description: 'Calculate button text for questions',
     },
-    {
-      name: 'singleFlowTitle',
-      title: 'Single Flow Title',
-      type: 'string',
-      validation: (Rule) => Rule.required(),
-      hidden: ({ document }) => document?.singleFlow === false,
-    },
-    {
-      name: 'numberOfSteps',
-      title: 'Number of steps',
-      type: 'number',
-      description: 'Number of the steps, up to 3',
-      validation: (Rule) => [
-        Rule.max(3).warning('Number of steps cannot be more than 3'),
-        (Rule) => Rule.required(),
-      ],
-    },
+    // {
+    //   name: 'singleFlowTitle',
+    //   title: 'Single Flow Title',
+    //   type: 'string',
+    //   validation: (Rule) => Rule.required(),
+    //   hidden: ({ document }) => document?.singleFlow === false,
+    // },
+    // {
+    //   name: 'numberOfSteps',
+    //   title: 'Number of steps',
+    //   type: 'number',
+    //   description: 'Number of the steps, up to 3 - for single flow should be 1',
+    //   validation: (Rule) => [
+    //     Rule.max(3).warning('Number of steps cannot be more than 3'),
+    //     (Rule) => Rule.required(),
+    //   ],
+    // },
     {
       name: 'sendTo',
       title: 'Email for monitoring service.',
@@ -81,7 +81,7 @@ export default {
     },
     {
       name: 'hero',
-      title: 'Hero Version',
+      title: 'Page Details',
       type: 'hero',
       validation: (Rule) => Rule.required(),
     },
@@ -93,9 +93,8 @@ export default {
     },
     {
       name: 'steps',
-      title: 'Steps',
+      title: 'Questions',
       type: 'array',
-      description: 'Note: Single flow only reads question of 1.step',
       of: [{ type: 'step' }],
     },
     {
