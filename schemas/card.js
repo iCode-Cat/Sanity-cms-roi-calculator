@@ -21,6 +21,13 @@ export default {
       },
     },
     {
+      name: 'detailPopup',
+      title: 'Popup Detail',
+      type: 'reference',
+      to: [{ type: 'recommedationPopup' }],
+      hidden: ({ document }) => document.section !== 'recommendations',
+    },
+    {
       name: 'title',
       title: 'title',
       type: 'string',

@@ -1,6 +1,6 @@
 export default {
   name: 'tabMenuBreakdown',
-  title: 'Tab Menu Breakdown',
+  title: 'Impact Section Details',
   type: 'document',
   initialValue: {
     tabMenuMod: 1,

@@ -13,15 +13,8 @@ export default {
     {
       name: 'icon',
       title: 'icon',
-      type: 'string',
+      type: 'image',
       initialValue: 'No',
-      description: 'Icon shortland from google material icons',
-    },
-    {
-      name: 'callQuestion',
-      title: 'Call Question Number',
-      type: 'number',
-      initialValue: 0,
     },
     {
       name: 'followUp',
@@ -30,11 +23,19 @@ export default {
       initialValue: false,
     },
     {
-      name: 'followupInformation',
-      title: 'It has follow up information?',
-      type: 'boolean',
-      initialValue: false,
+      name: 'callQuestion',
+      title: 'Call Question Number',
+      type: 'number',
+      initialValue: 0,
+      hidden: ({ document }) => !document.followUp,
     },
+
+    // {
+    //   name: 'followupInformation',
+    //   title: 'It has follow up information?',
+    //   type: 'boolean',
+    //   initialValue: false,
+    // },
     {
       name: 'information',
       title: 'Choose follow up information',

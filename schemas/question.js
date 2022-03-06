@@ -44,13 +44,19 @@ export default {
         list: [
           { title: 'Numeric', value: 'numeric' },
           { title: 'Text', value: 'text' },
-          { title: 'Boolean', value: 'boolean' },
-          { title: 'Multi Boolean', value: 'booleanMulti' },
+          { title: 'Single Select', value: 'boolean' },
+          { title: 'Multi Select', value: 'booleanMulti' },
           { title: 'Dropdown', value: 'dropdown' },
           { title: 'Information', value: 'context' },
         ],
       },
       validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'automateNext',
+      title: 'Automate Next',
+      type: 'boolean',
+      hidden: ({ document }) => document?.questionType !== 'boolean',
     },
     {
       name: 'validation',
@@ -72,7 +78,7 @@ export default {
     },
     {
       name: 'options',
-      title: 'Choose options for this question type',
+      title: 'Possible Answers',
       type: 'array',
       of: [{ type: 'option' }],
       hidden: ({ document }) =>
