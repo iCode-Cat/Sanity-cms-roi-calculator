@@ -16,31 +16,48 @@ export default {
         {
           name: 'contentArray',
           title: 'Content Array',
-          type: 'object',
+          type: 'document',
           fields: [
             {
+              name: 'title',
+              title: 'Title',
+              type: 'string',
+            },
+            {
               name: 'content',
-              title: 'content',
+              title: 'Content',
               type: 'array',
-              of: [
-                {
-                  type: 'block',
-                },
-                {
-                  type: 'image',
-                  fields: [
-                    {
-                      type: 'text',
-                      name: 'richText',
-                      title: 'Rich Text',
-                      description: `Rich Editor`,
-                      options: {
-                        isHighlighted: true,
-                      },
-                    },
-                  ],
-                },
-              ],
+              of: [{ type: 'block' }],
+            },
+            {
+              name: 'image',
+              title: 'Image',
+              type: 'image',
+            },
+            {
+              name: 'activeColor',
+              title: 'Active Color of Text',
+              type: 'colorPicker',
+            },
+            {
+              name: 'activeColorBg',
+              title: 'Active Color of BG',
+              type: 'colorPicker',
+            },
+            {
+              name: 'passiveColor',
+              title: 'Passive Color of Text',
+              type: 'colorPicker',
+            },
+            {
+              name: 'passiveColorBg',
+              title: 'Passive Color of BG',
+              type: 'colorPicker',
+            },
+            {
+              name: 'stepName',
+              title: 'Step Name',
+              type: 'string',
             },
           ],
         },
@@ -54,11 +71,6 @@ export default {
     {
       name: 'nextButton',
       title: 'Next Button ',
-      type: 'string',
-    },
-    {
-      name: 'closeButton',
-      title: 'Close Button ',
       type: 'string',
     },
   ],

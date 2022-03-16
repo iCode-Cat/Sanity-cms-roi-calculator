@@ -1,7 +1,7 @@
 export default {
   name: 'relatedQuestion',
   title: 'Related Questions',
-  type: 'document',
+  type: 'object',
   fields: [
     {
       name: 'name',

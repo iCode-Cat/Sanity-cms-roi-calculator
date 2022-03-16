@@ -22,13 +22,13 @@ export default {
       type: 'boolean',
       initialValue: false,
     },
-    {
-      name: 'callQuestion',
-      title: 'Call Question Number',
-      type: 'number',
-      initialValue: 0,
-      hidden: ({ document }) => !document.followUp,
-    },
+    // {
+    //   name: 'callQuestion',
+    //   title: 'Call Question Number',
+    //   type: 'number',
+    //   initialValue: 0,
+    //   // hidden: ({ document }) => !document.followUp,
+    // },
 
     // {
     //   name: 'followupInformation',
@@ -37,10 +37,10 @@ export default {
     //   initialValue: false,
     // },
     {
-      name: 'information',
-      title: 'Choose follow up information',
+      name: 'followUpQuestion',
+      title: 'Choose follow up question / information',
       type: 'reference',
-      to: [{ type: 'information' }],
+      to: [{ type: 'question' }],
       hidden: (document) => document.followupInformation === false,
       // hidden: ({ document }) => !document?.followupInformation,
     },

@@ -36,6 +36,7 @@ import inlineCard from './inlineCard';
 import inCard from './inCard';
 import submission from './submission';
 import recommendationPopup from './recommendationPopup';
+import questionDetails from './questionDetails';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -80,5 +81,6 @@ export default createSchema({
     conditionedTagsExists,
     submission,
     recommendationPopup,
+    questionDetails,
   ]),
 });

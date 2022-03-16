@@ -1,6 +1,6 @@
 export default {
   name: 'riskAssesmentLabel',
-  title: 'Risk Assestment Labels',
+  title: 'Breakdown Labels',
   type: 'document',
   fields: [
     {

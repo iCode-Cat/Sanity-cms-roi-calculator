@@ -16,12 +16,12 @@ export default {
       of: [{ type: 'reference', to: [{ type: 'question' }] }],
       validation: (Rule) => Rule.required(),
     },
-    {
-      name: 'relatedQuestions',
-      title: 'Related Questions',
-      type: 'array',
-      of: [{ type: 'reference', to: [{ type: 'relatedQuestion' }] }],
-    },
+    // {
+    //   name: 'relatedQuestions',
+    //   title: 'Related Questions',
+    //   type: 'array',
+    //   of: [{ type: 'reference', to: [{ type: 'relatedQuestion' }] }],
+    // },
   ],
   preview: {
     select: {

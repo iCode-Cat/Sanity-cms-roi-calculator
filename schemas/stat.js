@@ -26,11 +26,11 @@ export default {
       title: 'Subtitle',
       type: 'string',
     },
-    {
-      name: 'disclaimer',
-      title: 'Disclaimer',
-      type: 'boolean',
-    },
+    // {
+    //   name: 'disclaimer',
+    //   title: 'Disclaimer',
+    //   type: 'boolean',
+    // },
     {
       name: 'sectionGrade',
       title: 'Section Grade',

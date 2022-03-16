@@ -9,18 +9,18 @@ export default {
       type: 'string',
       validation: (Rule) => Rule.required(),
     },
-    {
-      name: 'partnerId',
-      title: 'Partner ID',
-      type: 'string',
-      validation: (Rule) => Rule.required(),
-    },
-    {
-      name: 'uuid',
-      title: 'uuid',
-      type: 'string',
-      validation: (Rule) => Rule.required(),
-    },
+    // {
+    //   name: 'partnerId',
+    //   title: 'Partner ID',
+    //   type: 'string',
+    //   validation: (Rule) => Rule.required(),
+    // },
+    // {
+    //   name: 'uuid',
+    //   title: 'uuid',
+    //   type: 'string',
+    //   validation: (Rule) => Rule.required(),
+    // },
     // {
     //   name: 'singleFLow',
     //   title: 'Single flow?',
@@ -41,6 +41,11 @@ export default {
     {
       name: 'skipAllButton',
       title: 'Skip All Button Text',
+      type: 'string',
+    },
+    {
+      name: 'messageSubmit',
+      title: 'Message After Quiz',
       type: 'string',
     },
     {
@@ -83,13 +88,11 @@ export default {
       name: 'hero',
       title: 'Page Details',
       type: 'hero',
-      validation: (Rule) => Rule.required(),
     },
     {
-      name: 'terms',
-      title: 'Terms',
-      type: 'term',
-      validation: (Rule) => Rule.required(),
+      name: 'questionSettings',
+      title: 'Question Details',
+      type: 'questionDetails',
     },
     {
       name: 'steps',
@@ -99,9 +102,14 @@ export default {
     },
     {
       name: 'stats',
-      title: 'Breakdown Settings',
+      title: 'Potential Impact',
       type: 'stat',
       validation: (Rule) => Rule.required(),
+    },
+    {
+      name: 'riskAssesment',
+      title: 'Risk Assesment',
+      type: 'riskAssesment',
     },
     {
       name: 'informationPractices',
@@ -114,11 +122,7 @@ export default {
       title: 'Recommendation',
       type: 'recommendation',
     },
-    {
-      name: 'riskAssesment',
-      title: 'Risk Assesment',
-      type: 'riskAssesment',
-    },
+
     {
       name: 'connection',
       title: 'info & submit',

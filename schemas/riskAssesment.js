@@ -8,16 +8,16 @@ export default {
       title: 'is Active?',
       type: 'boolean',
     },
-    {
-      name: 'revealAfter',
-      title: 'Reveal after previous expended',
-      type: 'boolean',
-    },
-    {
-      name: 'collapsed',
-      title: 'Collapsed',
-      type: 'boolean',
-    },
+    // {
+    //   name: 'revealAfter',
+    //   title: 'Reveal after previous expended',
+    //   type: 'boolean',
+    // },
+    // {
+    //   name: 'collapsed',
+    //   title: 'Collapsed',
+    //   type: 'boolean',
+    // },
     {
       name: 'title',
       title: 'Title',

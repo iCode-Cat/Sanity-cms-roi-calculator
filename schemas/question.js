@@ -15,7 +15,11 @@ export default {
       type: 'string',
       validation: (Rule) => Rule.required(),
     },
-
+    {
+      name: 'relatedQuestion',
+      title: 'Is it related question to another?',
+      type: 'boolean',
+    },
     {
       name: 'placeholder',
       title: 'Placeholder',
@@ -123,6 +127,9 @@ export default {
       ],
     },
   ],
+  initialValue: {
+    relatedQuestion: false,
+  },
   preview: {
     select: {
       title: 'text',
