@@ -107,54 +107,10 @@ export default {
       ],
     },
     {
-      name: 'labels',
-      title: 'Labels',
+      title: 'Label',
+      name: 'label',
       type: 'array',
-      of: [
-        {
-          title: 'Label',
-          name: 'label',
-          type: 'object',
-          initialValue: {
-            formulaVariable: 3474,
-            color: '#2196F3',
-          },
-          fields: [
-            {
-              title: 'Color',
-              name: 'color',
-              type: 'string',
-            },
-            {
-              title: 'Name',
-              name: 'name',
-              type: 'string',
-            },
-            {
-              title: 'Formula Variable',
-              name: 'formulaVariable',
-              type: 'number',
-            },
-            {
-              title: 'Tooltip Text',
-              name: 'tooltipText',
-              type: 'object',
-              fields: [
-                {
-                  title: 'Title',
-                  name: 'title',
-                  type: 'string',
-                },
-                {
-                  title: 'Content',
-                  name: 'content',
-                  type: 'string',
-                },
-              ],
-            },
-          ],
-        },
-      ],
+      of: [{ type: 'reference', to: { type: 'riskAssesmentLabel' } }],
     },
   ],
 };

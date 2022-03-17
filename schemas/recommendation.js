@@ -18,16 +18,6 @@ export default {
       title: 'title',
       type: 'string',
     },
-    {
-      name: 'isBarActive',
-      title: 'Is Bar ( counter ) active?',
-      type: 'boolean',
-    },
-    {
-      name: 'barTitle',
-      title: 'Why Us Title',
-      type: 'string',
-    },
     // {
     //   name: 'barSubtitle',
     //   title: 'Saving Bar Subtitle',
@@ -86,16 +76,7 @@ export default {
     //     },
     //   ],
     // },
-    {
-      name: 'barLeft',
-      title: 'Saving Bar Left',
-      type: 'string',
-    },
-    {
-      name: 'barRight',
-      title: 'Saving Bar Right',
-      type: 'string',
-    },
+
     // {
     //   name: 'tabs',
     //   title: 'Tabs',

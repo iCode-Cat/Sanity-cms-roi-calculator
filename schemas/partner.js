@@ -9,6 +9,11 @@ export default {
       type: 'string',
       validation: (Rule) => Rule.required(),
     },
+    {
+      name: 'hero',
+      title: 'Page Details',
+      type: 'hero',
+    },
     // {
     //   name: 'partnerId',
     //   title: 'Partner ID',
@@ -84,11 +89,7 @@ export default {
           }),
       ],
     },
-    {
-      name: 'hero',
-      title: 'Page Details',
-      type: 'hero',
-    },
+
     {
       name: 'questionSettings',
       title: 'Question Details',
@@ -122,7 +123,11 @@ export default {
       title: 'Recommendation',
       type: 'recommendation',
     },
-
+    {
+      name: 'whyUsSection',
+      title: 'Why Us Section',
+      type: 'whyUs',
+    },
     {
       name: 'connection',
       title: 'info & submit',
