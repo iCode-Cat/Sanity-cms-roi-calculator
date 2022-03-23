@@ -23,5 +23,11 @@ export default {
       title: 'Saving Bar Right',
       type: 'string',
     },
+    {
+      name: 'flipCards',
+      title: 'Flip Cards',
+      type: 'array',
+      of: [{ type: 'reference', to: { type: 'flipCard' } }],
+    },
   ],
 };

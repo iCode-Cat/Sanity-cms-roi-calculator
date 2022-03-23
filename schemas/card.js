@@ -84,6 +84,7 @@ export default {
       title: 'Has details?',
       type: 'boolean',
       initialValue: false,
+      hidden: ({ document }) => document.section === 'recommendations',
     },
     {
       name: 'linkTitle',

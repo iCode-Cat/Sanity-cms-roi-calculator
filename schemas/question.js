@@ -15,11 +15,11 @@ export default {
       type: 'string',
       validation: (Rule) => Rule.required(),
     },
-    {
-      name: 'relatedQuestion',
-      title: 'Is it related question to another?',
-      type: 'boolean',
-    },
+    // {
+    //   name: 'relatedQuestion',
+    //   title: 'Is it related question to another?',
+    //   type: 'boolean',
+    // },
     {
       name: 'placeholder',
       title: 'Placeholder',
@@ -90,6 +90,25 @@ export default {
         document?.questionType !== 'booleanMulti' &&
         document?.questionType !== 'dropdown',
     },
+    {
+      name: 'callOnCondition',
+      title: 'Only Call On Condition?',
+      type: 'boolean',
+    },
+    {
+      name: 'conditionedTag',
+      title: 'Call the question after answer if the tags meets.',
+      type: 'array',
+      of: [{ type: 'reference', to: { type: 'conditionedTags' } }],
+      hidden: ({ document }) => document.callOnCondition !== true,
+    },
+    // {
+    //   name: 'conditionList',
+    //   title: 'Condinited Tags',
+    //   type: 'array',
+    //   of: [{ type: 'reference', to: { type: 'conditionedTags' } }],
+    //   hidden: ({ document }) => document?.callOnCondition !== true,
+    // },
     {
       name: 'skip',
       title: 'Can user skip this question?',
