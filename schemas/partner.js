@@ -129,6 +129,35 @@ export default {
       type: 'whyUs',
     },
     {
+      name: 'ourPartners',
+      title: 'Our Partners',
+      type: 'document',
+      fields: [
+        {
+          name: 'isActive',
+          title: 'Is Active?',
+          type: 'boolean',
+        },
+        {
+          name: 'Title',
+          title: 'Title',
+          type: 'string',
+        },
+        {
+          name: 'logos',
+          title: 'Partner Logos',
+          type: 'array',
+          of: [{ type: 'reference', to: [{ type: 'ourPartner' }] }],
+        },
+        {
+          name: 'ourSupporters',
+          title: 'Our Supporters Layout',
+          type: 'reference',
+          to: [{ type: 'ourSupporters' }],
+        },
+      ],
+    },
+    {
       name: 'connection',
       title: 'info & submit',
       type: 'array',

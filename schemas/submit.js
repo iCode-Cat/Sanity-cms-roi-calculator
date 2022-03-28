@@ -10,6 +10,18 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: 'type',
+      title: 'Type',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Form', value: 'form' },
+          { title: 'Info', value: 'info' },
+        ],
+      },
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: 'buttonTitle',
       title: 'Button Title',
       type: 'string',
@@ -69,18 +81,7 @@ export default {
         },
       ],
     },
-    {
-      name: 'type',
-      title: 'Type',
-      type: 'string',
-      options: {
-        list: [
-          { title: 'Form', value: 'form' },
-          { title: 'Info', value: 'info' },
-        ],
-      },
-      validation: (Rule) => Rule.required(),
-    },
+
     {
       name: 'connect',
       title: 'Connect Button Text',
@@ -133,6 +134,13 @@ export default {
         ],
       },
       hidden: ({ document }) => document?.type !== 'form',
+    },
+    {
+      name: 'connectButtonCta',
+      title: 'Connect Button CTA',
+      type: 'string',
+      description: 'e = workEmail , c = companyName, p = partnerId',
+      hidden: ({ document }) => document?.type !== 'info',
     },
   ],
 };

@@ -73,5 +73,10 @@ export default {
       title: 'Next Button ',
       type: 'string',
     },
+    {
+      name: 'endButton',
+      title: 'End Button ',
+      type: 'string',
+    },
   ],
 };

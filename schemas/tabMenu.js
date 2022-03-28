@@ -21,31 +21,51 @@ export default {
       type: 'number',
       validation: (Rule) => Rule.required(),
     },
-    {
-      name: 'subTitle',
-      title: 'Sub Title',
-      type: 'string',
-    },
-    {
-      name: 'name',
-      title: 'Name',
-      type: 'string',
-    },
+    // {
+    //   name: 'subTitle',
+    //   title: 'Sub Title',
+    //   type: 'string',
+    // },
+    // {
+    //   name: 'name',
+    //   title: 'Name',
+    //   type: 'string',
+    // },
     {
       name: 'mainTitle',
       title: 'Main Title',
       type: 'string',
     },
     {
-      name: 'mainTitle2',
-      title: 'Main Title 2',
+      name: 'subTitle',
+      title: 'Subtitle',
       type: 'string',
     },
     {
-      name: 'compareTitle',
-      title: 'Compare Title',
+      name: 'circleTitle',
+      title: 'Circle Title',
       type: 'string',
     },
+    {
+      name: 'labelTitle1',
+      title: 'Label Title 1',
+      type: 'string',
+    },
+    {
+      name: 'labelTitle2',
+      title: 'Label Title 2',
+      type: 'string',
+    },
+    // {
+    //   name: 'mainTitle2',
+    //   title: 'Main Title 2',
+    //   type: 'string',
+    // },
+    // {
+    //   name: 'compareTitle',
+    //   title: 'Compare Title',
+    //   type: 'string',
+    // },
     {
       name: 'tooltip',
       title: 'Tooltip',
@@ -111,6 +131,18 @@ export default {
       name: 'label',
       type: 'array',
       of: [{ type: 'reference', to: { type: 'riskAssesmentLabel' } }],
+    },
+    {
+      name: 'conditionedTagsExists',
+      title: 'Conditioned Tags Exists',
+      type: 'array',
+      of: [{ type: 'reference', to: { type: 'conditionedTags' } }],
+    },
+    {
+      name: 'conditionedTagsMissing',
+      title: 'Conditioned Tags Missing',
+      type: 'array',
+      of: [{ type: 'reference', to: { type: 'conditionedTags' } }],
     },
   ],
 };

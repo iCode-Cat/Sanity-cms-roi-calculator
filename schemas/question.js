@@ -57,6 +57,12 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: 'infoImage',
+      title: 'Info Image',
+      type: 'image',
+      hidden: ({ document }) => document?.questionType !== 'context',
+    },
+    {
       name: 'automateNext',
       title: 'Automate Next',
       type: 'boolean',

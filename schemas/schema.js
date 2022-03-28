@@ -39,6 +39,8 @@ import recommendationPopup from './recommendationPopup';
 import questionDetails from './questionDetails';
 import whyUs from './whyUs';
 import flipCard from './flipCard';
+import ourPartners from './ourPartners';
+import ourSupporters from './ourSupporters';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -86,5 +88,7 @@ export default createSchema({
     questionDetails,
     whyUs,
     flipCard,
+    ourPartners,
+    ourSupporters,
   ]),
 });

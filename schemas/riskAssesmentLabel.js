@@ -72,12 +72,7 @@ export default {
       type: 'string',
       hidden: ({ document }) => !document.inCard,
     },
-    {
-      name: 'tagFound',
-      title: 'Conditioned Tags',
-      type: 'array',
-      of: [{ type: 'reference', to: { type: 'conditionedTags' } }],
-    },
+
     {
       title: 'Formula Variable',
       name: 'formulaVariable',
@@ -103,10 +98,29 @@ export default {
       hidden: ({ document }) => document.type !== 'impact',
     },
     {
-      name: 'change',
-      title: 'Change',
-      type: 'number',
+      name: 'conditionList',
+      title: 'Condition List',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'tagFound',
+              title: 'Conditioned Tags',
+              type: 'array',
+              of: [{ type: 'reference', to: { type: 'conditionedTags' } }],
+            },
+            {
+              name: 'change',
+              title: 'Change',
+              type: 'number',
+            },
+          ],
+        },
+      ],
     },
+
     {
       name: 'defaultValue',
       title: 'Default Value',

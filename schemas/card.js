@@ -16,7 +16,7 @@ export default {
         list: [
           { title: 'What You Should Worry?', value: 'worryAbout' },
           { title: 'Recommendations', value: 'recommendations' },
-          { title: 'Why Cognni?', value: 'whyCognni' },
+          { title: 'Risk Assessment', value: 'risk' },
         ],
       },
     },

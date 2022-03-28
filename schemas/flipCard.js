@@ -28,6 +28,18 @@ export default {
       title: 'Card Text on Flip',
       type: 'text',
     },
+    {
+      name: 'conditionedTagsExists',
+      title: 'Conditioned Tags Exists',
+      type: 'array',
+      of: [{ type: 'reference', to: { type: 'conditionedTags' } }],
+    },
+    {
+      name: 'conditionedTagsMissing',
+      title: 'Conditioned Tags Missing',
+      type: 'array',
+      of: [{ type: 'reference', to: { type: 'conditionedTags' } }],
+    },
   ],
   preview: {
     select: {

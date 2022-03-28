@@ -10,6 +10,11 @@ export default {
   },
   fields: [
     {
+      name: 'isActive',
+      title: 'Is Active?',
+      type: 'boolean',
+    },
+    {
       name: 'tabMenuMod',
       title: 'Tab Menu Mod',
       type: 'number',
